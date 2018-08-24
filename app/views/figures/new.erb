@@ -7,13 +7,22 @@
 
   <label>Select Title:</label><br>
   <%@titles.each do |title|%>
+<<<<<<< HEAD
       <input type="checkbox" name="figure[title_ids][]" id="title_<%=title.id%>" value="<%=title.id%>"><%=title.name%></input>
+=======
+      <input type="checkbox" name="figure[title_ids][]" id="" value="">
+>>>>>>> 621f1ec37db2c05cf0ba2b7ae0caa43c195c61cc
   <%end%>
   <br></br>
 
+<<<<<<< HEAD
 <label><h2>or, Create new Title:</h2>or, Create new Title:</label>
 <input type="text" name="title[name]" id="new_title" value="">
   <br></br>
+=======
+<label>or, Create new Title:</label>
+<input type="text" name="title[name]" value="">
+>>>>>>> 621f1ec37db2c05cf0ba2b7ae0caa43c195c61cc
 
 <label>Select Landmark:</label><br>
   <%@landmarks.each do |landmark|%>

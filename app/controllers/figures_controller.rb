@@ -22,6 +22,8 @@ class FiguresController < ApplicationController
     end
 
     @figure.save
+
+    @figure = Figure.create(name: params[:name])
     redirect "/figures/#{@figure.id}"
   end
 
@@ -53,5 +55,7 @@ class FiguresController < ApplicationController
     redirect :"/figures/#{@figure.id}"
   end
 
+=======
+>>>>>>> 621f1ec37db2c05cf0ba2b7ae0caa43c195c61cc
 
 end
