@@ -40,7 +40,7 @@ class FiguresController < ApplicationController
   end
 
   patch '/figures/:id' do
-  
+
     @figure = Figure.find_by_id(params[:id])
     @figure.update(params[:figure])
 
@@ -54,8 +54,5 @@ class FiguresController < ApplicationController
     @figure.save
     redirect :"/figures/#{@figure.id}"
   end
-
-=======
->>>>>>> 621f1ec37db2c05cf0ba2b7ae0caa43c195c61cc
-
+  
 end
